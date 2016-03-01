@@ -1,0 +1,88 @@
+//Julio Moya ... Project 1
+
+
+float sunX, sunY;        // Position of sun 
+float dx, dy;
+//// SETUP:creen size, set modes.
+void setup()
+{
+  size( 600, 400 );
+  reset();
+}
+void reset() {
+  sunX=  width/2;         //sun half-way across the screen.
+  sunY=  50;
+// Blue sky
+background( 102, 255, 255 );
+fill( 255, 255, 0 );
+// Yellow sun
+ellipse( sunX, sunY, 40, 40 );
+fill( 222,184,135 );
+// Tan house
+rect( 100,100, 100,50 );
+triangle( 90,100, 210,100, 150,50 );
+// Brown Door
+fill( 205,133,63 );
+rect( 140,120, 20,90 );
+// Grass
+fill( 0,180,0 );
+noStroke();
+rectMode( CORNERS );
+rect( 0,150, width,height ); 
+// Tree Trunk
+fill( 165,42,42 );              
+rect( 470,150, 430,70 );
+// Message
+text( "Julio Moya", 15,10 );
+text( "I Cant Make The            Sun Move", 190,40);
+// Green Tree
+fill( 0,100,0 );
+ellipse( 450,50, 90,90 );
+// Window 1
+fill( 102,255,255 );
+rect( 110,130, 125,110 );
+// Window 2
+fill( 102,255,255 );
+rect( 190,130, 175,110 );
+// Street
+fill( 0,0,0 );
+rect( 0,300, 600,205);
+// Median
+fill( 255,255,255 );
+rect( 5,252, 40,248);
+fill( 255,255,255 );
+rect( 60,252, 100,248);
+fill( 255,255,255 );
+rect( 120,252, 160,248);
+fill( 255,255,255 );
+rect( 180,252, 220,248);
+fill( 255,255,255 );
+rect( 240,252, 280,248);
+fill( 255,255,255 );
+rect( 300,252, 340,248);
+fill( 255,255,255 );
+rect( 360,252, 400,248);
+fill( 255,255,255 );
+rect( 420,252, 460,248);
+fill( 255,255,255 );
+rect( 480,252, 520,248);
+fill( 255,255,255 );
+rect( 540,252, 580,248);
+//Green Monster  
+fill( 0,255,0 );
+ellipse( 120,200, 95,95 );
+rect( 100,300, 110,235);
+rect( 130,300, 140,235);
+//Eyes White
+fill( 255,255,255 );
+ellipse( 120,185, 75, 55 );
+// Message
+text( "Monster", 100,235);
+//Eyes Black
+fill( 65,105,225 );
+ellipse( 120,185, 40, 40 );
+//Gold Nugget
+fill( 218,165,32 );
+ellipse( 200,300, 40, 30 );
+
+}
